@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_registro">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/registro_imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079"
+        app:srcCompat="@drawable/registro_image">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <ImageView
+        android:id="@+id/registro_imagen_camara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/baseline_camera_alt_24"
+        app:layout_constraintBottom_toBottomOf="@+id/registro_imagen"
+        app:layout_constraintEnd_toEndOf="@+id/registro_imagen"
+        app:layout_constraintStart_toStartOf="@+id/registro_imagen"
+        app:layout_constraintTop_toTopOf="@+id/registro_imagen"
+        app:layout_constraintVertical_bias="1.0">
+
+    </ImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registro_input_layout_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:hint="@string/registro_name"
+        app:endIconMode="password_toggle"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registro_imagen"
+        app:startIconDrawable="@drawable/baseline_face_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registro_input_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registro_input_layout_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:hint="@string/registro_last_name"
+        app:endIconMode="password_toggle"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registro_input_layout_text_name"
+        app:startIconDrawable="@drawable/baseline_face_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registro_input_text_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registro_exposed_dropdown_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:background="@color/registro_spinner"
+        android:hint="@string/registro_edad"
+        app:layout_constraintBottom_toTopOf="@+id/registro_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registro_input_layout_last_name"
+        app:layout_constraintVertical_bias="0.0">
+
+        <AutoCompleteTextView
+            android:id="@+id/exposedDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none">
+
+        </AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+
+        android:id="@+id/registro_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/amarillo"
+        android:enabled="true"
+        android:minWidth="200dp"
+        android:text="@string/registro_btn"
+        app:layout_constraintBottom_toTopOf="@+id/registro_politica_privacidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registro_input_layout_last_name"
+        app:layout_constraintVertical_bias="0.881">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/registro_politica_privacidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"
+        android:text="@string/registro_politica_privacidad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/registro_condiciones_privacidad"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/registro_condiciones_privacidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:contextClickable="true"
+        android:text="@string/registro_condiciones_privacidad"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/registro_politica_privacidad">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

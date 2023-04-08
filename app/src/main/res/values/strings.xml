@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Flujo login</string>
+    <string name="login_text">Login</string>
+    <string name="password_text">Password</string>
+    <string name="login_forgot_password">Forgot password</string>
+    <string name="login_get_new">Get new</string>
+    <string name="login_account_text">Do you have an account?</string>
+    <string name="login_create_text">Create new</string>
+    <string name="registro_name">¿Como te llamas?</string>
+    <string name="registro_last_name">¿Y tu apellido?</string>
+    <string name="registro_edad">¿cuantos años tienes?</string>
+    <string name="registro_btn">ME APUNTO!</string>
+    <string name="registro_politica_privacidad">Politica de privacidad.</string>
+    <string name="registro_condiciones_privacidad">Ver Condiciones</string>
+    <string name="home_title">Upcoming meetups</string>
+    <string name="home_card_view1_text1">USA. Los Angeles - 2 Weeks</string>
+    <string name="home_card_view1_text2">City of Los Angeles</string>
+</resources>
