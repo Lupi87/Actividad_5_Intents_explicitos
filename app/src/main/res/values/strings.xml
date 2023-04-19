@@ -15,4 +15,10 @@
     <string name="home_title">Upcoming meetups</string>
     <string name="home_card_view1_text1">USA. Los Angeles - 2 Weeks</string>
     <string name="home_card_view1_text2">City of Los Angeles</string>
+    <string name="error">Usuario o contraseña incorrectos.</string>
+    <string name="error2">Esta app no es para ti</string>
+    <string name="error3">Por favor complete todos los campos</string>
+    <string name="error4">Ups, no se aceptan las " @ " ni " ! ",disculpen las molestias</string>
+    <string name="error5">Credenciales inválidas. Por favor intentelo de nuevo.</string>
+
 </resources>

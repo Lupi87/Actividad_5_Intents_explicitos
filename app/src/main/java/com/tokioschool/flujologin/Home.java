@@ -1,6 +1,9 @@
 package com.tokioschool.flujologin;
 
+import static com.tokioschool.flujologin.Registro.KEY_USER;
+
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +22,10 @@ public class Home extends AppCompatActivity {
         binding = HomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        //Recibimos el username del intent recibido
+        String username = getIntent().getStringExtra(KEY_USER);
 
+        Log.d("Home", "Username recibido: " + username);
     }
 
 }
