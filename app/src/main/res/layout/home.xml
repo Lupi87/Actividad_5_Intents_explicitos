@@ -162,9 +162,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/home_card1"
-
-                >
+                app:srcCompat="@drawable/home_card2">
 
             </androidx.appcompat.widget.AppCompatImageView>
 
@@ -172,13 +170,13 @@
                 android:id="@+id/home_card_view2_text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_card_view1_text1" />
+                android:text="@string/home_card_view2_text1" />
 
             <TextView
                 android:id="@+id/home_card_view2_text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_card_view1_text2"
+                android:text="@string/home_card_view2_text2"
                 android:textColor="@color/black"
                 android:textSize="28sp"
                 android:textStyle="bold" />
